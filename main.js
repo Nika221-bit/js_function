@@ -39,7 +39,36 @@ function isOdd(number) {
 }
 console.log(isOdd(prompt("Enter a number:")));
 
+
+
+////boolean with return example2
+
+function booleanExample(number) {
+    return number % 2 === 0 ? true : false;
+}
+console.log(booleanExample(prompt("Enter a number:")));
+
+//email 
+
+function isvalidEmail(email) {
+    if (email.includes("@")) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+console.log(isvalidEmail(prompt("Enter your email:")));
+
+//email with return example
+
+function isValidEmail2(email) {
+    return email.includes("@") ? true : false;
+}
+console.log(isValidEmail2(prompt("Enter your email:")));
+
 // workout 1
+
 const arr1 = [2, 4, 6];
 const arr2 = [1, 3, 5];
 const arr3 = [7, 8];
