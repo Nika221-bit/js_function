@@ -12,4 +12,38 @@ function happyNewYear(finalusername,age) {
 
 happyNewYear(prompt("Enter your name:"), prompt("Enter your age:"));
 
+// return example
+function add(x, y) {
+    let result = x + y;
+    return result;
+}
+let sum = add(2, 3);
+console.log(sum); // 5
 
+// workout 1
+const arr1 = [2, 4, 6];
+const arr2 = [1, 3, 5];
+const arr3 = [7, 8];
+
+function addArrays(array1, array2, array3) {
+    const all = [...array1, ...array2, ...array3];
+    const total = all.reduce((sum, n) => sum + n, 0);
+    return total;
+}
+
+let totalSum = addArrays(arr1, arr2, arr3);
+console.log(totalSum); // 36
+
+// workout 2
+const arr_1 = [10, 20];
+const arr_2 = [5, 15, 25];
+const arr_3 = [30];
+const arr_4 = [2, 4, 6];
+
+function addAll(array1, array2, array3, array4) {
+    const all1 = [...array1, ...array2, ...array3, ...array4];
+    const total = all1.reduce((sum, n) => sum + n, 0);
+    return total;
+}
+
+console.log(addAll(arr_1, arr_2, arr_3, arr_4)); // 117
