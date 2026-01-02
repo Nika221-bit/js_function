@@ -46,4 +46,20 @@ function addAll(array1, array2, array3, array4) {
     return total;
 }
 
-console.log(addAll(arr_1, arr_2, arr_3, arr_4)); // 117
+console.log(addAll(arr_1, arr_2, arr_3, arr_4)); 
+
+//workout 3
+const arr01 = [2, "hello", 4];
+const arr02 = ["world", 6, 8];
+const arr03 = [10, "test", 12];
+function addNumbersOnly(arr01, arr02, arr03) {
+    const all2 = [...arr01, ...arr02, ...arr03];
+    let filtered = all2.filter(item => typeof item === 'number');
+    let total = filtered.reduce((sum, n) => sum + n, 0);
+    return total;
+     
+}
+
+let result = addNumbersOnly(arr01, arr02, arr03);
+console.log(result);
+
