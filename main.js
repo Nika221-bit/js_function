@@ -20,6 +20,25 @@ function add(x, y) {
 let sum = add(2, 3);
 console.log(sum); // 5
 
+
+//boolean example
+
+function isEven(number) {
+    if (number % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isEven(prompt("Enter a number:")));
+
+//boolean with return example
+
+function isOdd(number) {
+    return number % 2 !== 0;
+}
+console.log(isOdd(prompt("Enter a number:")));
+
 // workout 1
 const arr1 = [2, 4, 6];
 const arr2 = [1, 3, 5];
